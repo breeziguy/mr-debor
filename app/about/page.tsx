@@ -87,7 +87,12 @@ export default function AboutPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[300px] md:h-[400px]">
-          <Image src="/placeholder.svg?height=800&width=1600" alt="About DropTop" fill className="object-cover" />
+          <Image 
+            src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop" 
+            alt="About DropTop" 
+            fill 
+            className="object-cover" 
+          />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <div className="text-center text-white px-4">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">About Us</h1>
@@ -121,7 +126,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=800&width=1200"
+                  src="https://images.unsplash.com/photo-1547744037-c14237f0f237?q=80&w=2070&auto=format&fit=crop"
                   alt="DropTop showroom"
                   fill
                   className="object-cover"

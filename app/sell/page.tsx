@@ -92,7 +92,7 @@ export default function SellPage() {
         {/* Hero Section */}
         <section className="relative h-[300px] md:h-[400px]">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sell-car-hero-image-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.jpg"
+            src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=2073&auto=format&fit=crop"
             alt="Sell your car"
             fill
             className="object-cover"

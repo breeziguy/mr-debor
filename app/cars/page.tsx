@@ -91,7 +91,7 @@ export default function CarsPage() {
         {/* Hero Section */}
         <section className="relative h-[250px] md:h-[300px]">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cars-inventory-hero-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.jpg"
+            src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?q=80&w=2069&auto=format&fit=crop"
             alt="Our Inventory"
             fill
             className="object-cover"

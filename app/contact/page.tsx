@@ -90,7 +90,12 @@ export default function ContactPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[300px] md:h-[400px]">
-          <Image src="/placeholder.svg?height=800&width=1600" alt="Contact DropTop" fill className="object-cover" />
+          <Image 
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
+            alt="Contact DropTop" 
+            fill 
+            className="object-cover" 
+          />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <div className="text-center text-white px-4">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Contact Us</h1>
@@ -107,155 +112,60 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Contact Information */}
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">Get In Touch</h2>
-                <p className="text-gray-600 mb-8">
-                  Have questions about a specific vehicle? Want to schedule a test drive? Our team is ready to assist
-                  you with any inquiries you may have.
-                </p>
-
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">Get in Touch</h2>
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <MapPin className="h-5 w-5 text-primary" />
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold">Visit Our Showroom</h3>
-                      <p className="text-gray-600">
-                        123 Main Street, Suite 456
-                        <br />
-                        New York, NY 10001
-                        <br />
-                        United States
-                      </p>
+                    <Phone className="h-5 w-5 text-primary mt-1 mr-3" />
+                    <div>
+                      <p className="font-medium">Phone</p>
+                      <p className="text-gray-600">(555) 123-4567</p>
                     </div>
                   </div>
-
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <Phone className="h-5 w-5 text-primary" />
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold">Call Us</h3>
-                      <p className="text-gray-600">
-                        Sales: 989-614-8696
-                        <br />
-                        Service: 989-614-8696
-                        <br />
-                        Parts: 989-614-8696
-                      </p>
+                    <Mail className="h-5 w-5 text-primary mt-1 mr-3" />
+                    <div>
+                      <p className="font-medium">Email</p>
+                      <p className="text-gray-600">info@droptop.com</p>
                     </div>
                   </div>
-
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <Mail className="h-5 w-5 text-primary" />
+                    <Clock className="h-5 w-5 text-primary mt-1 mr-3" />
+                    <div>
+                      <p className="font-medium">Business Hours</p>
+                      <p className="text-gray-600">Mon-Fri: 9:00AM - 9:00PM</p>
+                      <p className="text-gray-600">Sat-Sun: 9:00AM - 5:00PM</p>
                     </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold">Email Us</h3>
-                      <p className="text-gray-600">
-                        Sales: sales@droptop.com
-                        <br />
-                        Customer Service: support@droptop.com
-                        <br />
-                        General Inquiries: info@droptop.com
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mt-1">
-                      <Clock className="h-5 w-5 text-primary" />
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold">Business Hours</h3>
-                      <p className="text-gray-600">
-                        Monday - Friday: 9:00 AM - 9:00 PM
-                        <br />
-                        Saturday: 9:00 AM - 7:00 PM
-                        <br />
-                        Sunday: 10:00 AM - 5:00 PM
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8">
-                  <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-                  <div className="flex space-x-4">
-                    <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                      <Facebook className="h-6 w-6" />
-                      <span className="sr-only">Facebook</span>
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                      <Twitter className="h-6 w-6" />
-                      <span className="sr-only">Twitter</span>
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                      <Instagram className="h-6 w-6" />
-                      <span className="sr-only">Instagram</span>
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                      <Linkedin className="h-6 w-6" />
-                      <span className="sr-only">LinkedIn</span>
-                    </a>
                   </div>
                 </div>
               </div>
 
               {/* Contact Form */}
-              <div className="bg-[#f5f0e5] p-6 md:p-8 rounded-lg">
-                <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-4">Send us a Message</h3>
                 <form className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                        First Name
-                      </label>
-                      <Input id="firstName" placeholder="John" />
+                      <Label htmlFor="first-name">First Name</Label>
+                      <Input id="first-name" placeholder="John" />
                     </div>
                     <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                        Last Name
-                      </label>
-                      <Input id="lastName" placeholder="Doe" />
+                      <Label htmlFor="last-name">Last Name</Label>
+                      <Input id="last-name" placeholder="Doe" />
                     </div>
                   </div>
-
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email Address
-                    </label>
-                    <Input id="email" type="email" placeholder="john.doe@example.com" />
+                    <Label htmlFor="email">Email</Label>
+                    <Input id="email" type="email" placeholder="john@example.com" />
                   </div>
-
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone Number
-                    </label>
-                    <Input id="phone" placeholder="(123) 456-7890" />
+                    <Label htmlFor="phone">Phone</Label>
+                    <Input id="phone" type="tel" placeholder="(555) 123-4567" />
                   </div>
-
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                      Subject
-                    </label>
-                    <Input id="subject" placeholder="Vehicle Inquiry" />
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea id="message" placeholder="How can we help you?" className="h-32" />
                   </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      placeholder="I'm interested in learning more about..."
-                      className="min-h-[120px]"
-                    />
-                  </div>
-
-                  <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-                    Send Message
-                  </Button>
+                  <Button type="submit" className="w-full">Send Message</Button>
                 </form>
               </div>
             </div>
@@ -417,3 +327,4 @@ export default function ContactPage() {
     </div>
   )
 }
+
