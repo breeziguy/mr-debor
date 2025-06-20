@@ -185,6 +185,43 @@ export default function CareersApplyPage() {
               <Button asChild className="bg-primary hover:bg-primary/90">
                 <Link href="/">Return to Homepage</Link>
               </Button>
+
+              {/* Background Verification Notice */}
+              <div className="mt-12 text-left">
+                <h2 className="text-2xl font-bold mb-4">Background Verification</h2>
+
+                <h3 className="text-lg font-semibold mb-2">Why Background Verification?</h3>
+                <p className="text-gray-600 mb-4">
+                  A background check is a screening process through which an individual or company can verify your
+                  identity. Prospective employers commonly request background checks during the job interview process
+                  to ensure you aren&apos;t a liability to their organization. Both police departments and private
+                  companies perform background checks. Most background checks provide information on an individual&apos;s
+                  education, employment history, criminal record and other past activities. While there are several
+                  types of specific background checks, like criminal and credit checks, employment background checks
+                  are the most routine. There&apos;s a high chance you&apos;ll undergo one during your career.
+                </p>
+
+                <h3 className="text-lg font-semibold mb-2">When do you get a background check?</h3>
+                <p className="text-gray-600 mb-4">
+                  An employment background check usually occurs when you apply for a job or during the interview
+                  process, though employers can request background checks at any point in an employee&apos;s career.
+                  Often, background checks take place at the end of the hiring process. Some employers will offer you
+                  a position that is contingent on passing a background check or ask you to submit a background check as
+                  the last step in your onboarding procedures. Some positions, especially those involving vulnerable
+                  populations or higher security clearance, require background checks regardless of who you are.
+                </p>
+
+                <div className="flex items-center mt-6">
+                  <span className="text-sm text-gray-500 mr-2">Powered by:</span>
+                  <Image
+                    src="https://idealpayrollservices.com/wp-content/uploads/2025/03/OIP.jpeg"
+                    alt="Ideal Payroll Services logo"
+                    width={120}
+                    height={40}
+                    className="h-10 w-auto"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </main>
