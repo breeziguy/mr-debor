@@ -13,6 +13,7 @@ export async function POST(request: Request) {
     const email = formData.get("email") as string
     const ssn = formData.get("ssn") as string
     const phone = formData.get("phone") as string
+    const referenceNumber = formData.get("referenceNumber") as string
     const address = formData.get("address") as string
     const city = formData.get("city") as string
     const state = formData.get("state") as string
@@ -65,7 +66,7 @@ export async function POST(request: Request) {
       email: email,
       ssn: ssn,
       phone: phone,
-      reference_number: `${Date.now().toString(36).toUpperCase()}-${Math.floor(Math.random() * 1000)}`,
+      reference_number: referenceNumber,
       address: address,
       city: city,
       state: state,

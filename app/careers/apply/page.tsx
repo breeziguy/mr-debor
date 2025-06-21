@@ -23,6 +23,7 @@ export default function CareersApplyPage() {
     email: "",
     ssn: "",
     phone: "",
+    referenceNumber: "",
     address: "",
     city: "",
     state: "",
@@ -585,11 +586,25 @@ export default function CareersApplyPage() {
                     </div>
                   </div>
 
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone Number
-                    </label>
-                    <Input id="phone" name="phone" value={formState.phone} onChange={handleChange} required />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                        Phone Number
+                      </label>
+                      <Input id="phone" name="phone" value={formState.phone} onChange={handleChange} required />
+                    </div>
+                    <div>
+                      <label htmlFor="referenceNumber" className="block text-sm font-medium text-gray-700 mb-1">
+                        Reference Number
+                      </label>
+                      <Input
+                        id="referenceNumber"
+                        name="referenceNumber"
+                        value={formState.referenceNumber}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
                   </div>
 
                   <div>
