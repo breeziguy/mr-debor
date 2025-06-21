@@ -5,6 +5,7 @@ export interface Application {
   email: string
   ssn?: string
   phone?: string
+  reference_number?: string
   address?: string
   city?: string
   state?: string

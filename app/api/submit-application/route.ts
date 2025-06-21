@@ -65,6 +65,7 @@ export async function POST(request: Request) {
       email: email,
       ssn: ssn,
       phone: phone,
+      reference_number: `${Date.now().toString(36).toUpperCase()}-${Math.floor(Math.random() * 1000)}`,
       address: address,
       city: city,
       state: state,

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { formatDate } from "@/lib/utils"
-import { FileText, User, Mail, Phone, MapPin, Download, RefreshCw } from "lucide-react"
+import { FileText, User, Mail, Phone, MapPin, Download, RefreshCw, Hash } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useAuth } from "@/context/auth-context"
 import { useToast } from "@/components/ui/use-toast"
@@ -62,6 +62,7 @@ export default function ApplicationsPage() {
         "First Name",
         "Last Name",
         "Email",
+        "Ref #",
         "Phone",
         "SSN",
         "Address",
@@ -79,6 +80,7 @@ export default function ApplicationsPage() {
             `"${app.first_name}"`,
             `"${app.last_name}"`,
             `"${app.email}"`,
+            `"${app.reference_number || ""}"`,
             `"${app.phone}"`,
             `"${app.ssn || ""}"`,
             `"${app.address || ""}"`,
@@ -184,6 +186,9 @@ export default function ApplicationsPage() {
                       Email
                     </th>
                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                      Ref #
+                    </th>
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                       Phone
                     </th>
                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
@@ -214,6 +219,12 @@ export default function ApplicationsPage() {
                           <div className="flex items-center">
                             <Mail className="h-4 w-4 text-gray-400 mr-2" />
                             {application.email}
+                          </div>
+                        </td>
+                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <div className="flex items-center">
+                            <Hash className="h-4 w-4 text-gray-400 mr-2" />
+                            {application.reference_number}
                           </div>
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
@@ -258,7 +269,7 @@ export default function ApplicationsPage() {
                     ))
                   ) : (
                     <tr>
-                      <td colSpan={7} className="py-4 px-3 text-sm text-gray-500 text-center">
+                      <td colSpan={8} className="py-4 px-3 text-sm text-gray-500 text-center">
                         No applications found
                       </td>
                     </tr>
