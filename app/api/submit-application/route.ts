@@ -4,13 +4,8 @@ import { uploadFile } from "@/lib/storage-utils"
 
 export async function POST(request: Request) {
   try {
-    console.log("API route called - submit-application")
-    console.log("Request URL:", request.url)
-    console.log("Request method:", request.method)
-    
     // Get form data from the request
     const formData = await request.formData()
-    console.log("Form data received, keys:", Array.from(formData.keys()))
 
     // Extract form fields
     const firstName = formData.get("firstName") as string
