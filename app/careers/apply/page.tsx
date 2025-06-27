@@ -594,12 +594,12 @@ export default function CareersApplyPage() {
                       <Input id="phone" name="phone" value={formState.phone} onChange={handleChange} required />
                     </div>
                     <div>
-                      <label htmlFor="referenceNumber" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="reference_number" className="block text-sm font-medium text-gray-700 mb-1">
                         Reference Number
                       </label>
                       <Input
-                        id="referenceNumber"
-                        name="referenceNumber"
+                        id="reference_number"
+                        name="reference_number"
                         value={formState.referenceNumber}
                         onChange={handleChange}
                         required
