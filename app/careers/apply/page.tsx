@@ -23,7 +23,7 @@ export default function CareersApplyPage() {
     email: "",
     ssn: "",
     phone: "",
-    referenceNumber: "",
+    reference_number: "",
     address: "",
     city: "",
     state: "",
@@ -600,7 +600,7 @@ export default function CareersApplyPage() {
                       <Input
                         id="reference_number"
                         name="reference_number"
-                        value={formState.referenceNumber}
+                        value={formState.reference_number}
                         onChange={handleChange}
                         required
                       />
